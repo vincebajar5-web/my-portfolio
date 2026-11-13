@@ -506,7 +506,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Vince Jin B. Bajar &bull; Sana Pasado</p>
+        <p>&copy; 2026 Vince Jin B. Bajar &bull; late natapos</p>
     </footer>
 
 </body>
