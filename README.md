@@ -369,4 +369,52 @@
 
 </body>
 </html>
+<!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="about-image">
+      <img src="your-photo.jpg" alt="Vince Jin B. Bajar" />
+    </div>
+    <div class="about-text">
+      <p>I am currently studying programming and software development, focusing on writing clean, readable code and building practical applications. I enjoy breaking down technical problems and learning how different systems work together.</p>
+      <p>Right now, I am sharpening my skills in Java, Python, and front-end web development while building small projects to apply what I learn in class.</p>
+    </div>
+    <div class="about-skills">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>OOP</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+.about-content {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-image {
+  flex: 1 1 220px;
+  max-width: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.about-image img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.about-image:hover {
+  transform: scale(1.05);
+}
 
