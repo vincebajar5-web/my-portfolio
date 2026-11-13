@@ -1,4 +1,165 @@
-1.75rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Personal portfolio showcasing programming projects, certificates, and skills." />
+<title>My Portfolio</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #1e3c72;
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-title {
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #d0e6ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  section {
+    padding: 3rem 0;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  section:last-of-type {
+    border-bottom: none;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #323232;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px #aaa;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid #66a6ff;
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+  }
+  p, .subtitle {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-bottom: 1.4rem;
+  }
+  .subtitle {
+    font-weight: 500;
+    font-style: italic;
+  }
+  .button {
+    display: inline-block;
+    background: #66a6ff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 12px rgba(102,166,255,0.4);
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #3a75d6;
+    transform: translateY(-3px);
+  }
+  .about-content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .about-text {
+    flex: 2;
+    min-width: 280px;
+    font-size: 1rem;
+  }
+  .about-skills {
+    flex: 1;
+    min-width: 220px;
+  }
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .skills-list li {
+    background: #66a6ff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(102,166,255,0.5);
+    user-select: none;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1rem;
+  }
+  .card {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
     box-shadow: 0 8px 20px rgba(33, 150, 243, 0.15);
     transition: box-shadow 0.3s ease;
   }
@@ -100,6 +261,7 @@
 </style>
 </head>
 <body>
+
 <header>
   <nav>
     <a href="#home" class="site-title">MY PORTFOLIO</a>
@@ -111,12 +273,14 @@
     </ul>
   </nav>
 </header>
+
 <main>
   <section id="home">
     <h1>Hi, I'm Vince Jin B. Bajar.</h1>
     <p class="subtitle">I'm a Computer Science student learning software development, object-oriented programming, and web design.</p>
     <a href="#projects" class="button">See My Work</a>
   </section>
+
   <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
@@ -137,6 +301,7 @@
       </div>
     </div>
   </section>
+
   <section id="projects">
     <h2>Projects & Certificates</h2>
     <h3>Projects</h3>
@@ -171,6 +336,7 @@
       </div>
     </div>
   </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-layout">
@@ -196,8 +362,11 @@
     </div>
   </section>
 </main>
+
 <footer>
   <p>&copy; 2026 sana pasado</p>
 </footer>
+
 </body>
 </html>
+
